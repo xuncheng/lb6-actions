@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>com.leonspok.osx.Irvue</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.wxuncheng.LaunchBar.action.IrvueSaveCurrentWallpaper</string>
+	<key>CFBundleName</key>
+	<string>Irvue - Save Current Wallpaper</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>Xuncheng Wang</string>
+		<key>LBEmail</key>
+		<string>w.xun.cheng@gmail.com</string>
+		<key>LBSummary</key>
+		<string>This action saves wallpaper from current screen</string>
+		<key>LBTwitter</key>
+		<string>@wxuncheng</string>
+		<key>LBWebsiteURL</key>
+		<string>https://github.com/xuncheng/lb6-actions</string>
+	</dict>
+	<key>LBRequiredApplication</key>
+	<string>com.leonspok.osx.Irvue</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBResultType</key>
+			<string>unknown</string>
+			<key>LBScriptName</key>
+			<string>default.scpt</string>
+		</dict>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 Xuncheng Wang</string>
+</dict>
+</plist>
