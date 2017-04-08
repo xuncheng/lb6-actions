@@ -1,0 +1,26 @@
+language: ruby
+rvm: 2.0.0
+
+script:
+  - rake build
+
+deploy:
+  provider: s3
+  access_key_id: AKIAJTW4TSCGY5SZ6KHA
+  secret_access_key:
+    secure: gwmBfNbFBoxNK1ccP7WnkH/VZmQn9EP2asqmPCSAoF9azCaRvL0KZTF55XaVQpmTpnIHJgEP7qcKLJrWF6Fa1vKqM0mYEuLrjdjyWUm7Wlo/SYWtKlzZY1p4SI5whYfsvWmTS01QOCudyXNbpABbOJS+VoUKJTHFOhbusE5haUVR9t0omTj4UbFzk7K35f84JKwRlfKecRJZtWycChlXCo5F9U3hBJqeEB1TQxRFaL8S/Fs2zBs5ssyQDCP1z1UAT4CPaTvMgKS1avr0V+oBtq4U80aKgFZanDH3UlNLpxUWwWEJ0W2I4Yfw+jA/G9LANIkARjWP12jLC7rYZzjmUwrIYCrsHtPMBO8vXKNf/p8Y18gD3X//eNwjfzrV+ZLrIBwraoov0pbfOjQ96viGq54A6fv9DcST1aTNF3hj9IaZJOp/YuhrwtSnsyY+jpqj8uOyGmdo0I6fZjqJq02VmFSAK+RGhFwp0aF7LXk7b+J0btW/HWYpBDmWvv1L1OiGD3PHSgq5+iLWddBrq82N2aq6RKZbt3gdH3F9m4BTD+H8L8tpu27MBhjeMjObnt5ccWIlK9/Zq4pVDTEjt/JXPGXJdFzUiegWEZlx99OOHvERSC0ujG99nY5VDnwwcr3uPz/zAkddTs4RZMuN5wFD7mAJWsbmR7IXQps6hAHeWFc=
+  bucket: wxuncheng
+  skip_cleanup: true
+  local-dir: build
+  upload-dir: lbdist
+  acl: public_read
+  on:
+    repo: xuncheng/lb6-actions
+    branch: master
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
