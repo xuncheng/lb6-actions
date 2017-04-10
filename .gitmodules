@@ -1,0 +1,3 @@
+[submodule "Github.lbaction"]
+	path = Github.lbaction
+	url = https://github.com/bswinnerton/launchbar-github.git
